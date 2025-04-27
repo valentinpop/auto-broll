@@ -1,0 +1,21 @@
+# ───── backend & API ────────────────────────────────────────────────────────────
+fastapi>=0.110          # framework REST
+uvicorn[standard]>=0.27 # ASGI server (auto-reload + colour logs)
+
+# ───── dataclasses / validare ──────────────────────────────────────────────────
+pydantic>=2.6           # modele + validare (folosit în FastAPI)
+
+# ───── analiză imagine / video de bază ─────────────────────────────────────────
+opencv-python>=4.8      # citire cadre + operații blur/shake
+numpy>=1.26             # procesare matrici
+
+# ───── CLI & logging frumos ────────────────────────────────────────────────────
+rich>=13.7              # color console output
+
+# ───── testare ────────────────────────────────────────────────────────────────
+pytest>=8.1             # rulăm cu GitHub Actions
+
+# ───── opțional (instalezi mai târziu) ─────────────────────────────────────────
+# pyav>=12.0            # decodor FFmpeg (necesită librării dev pe runner)
+# imageio[ffmpeg]>=2.34 # alternativă simplă pentru citire video
+# scikit-image>=0.23    # filtrare suplimentară (sharpness, exposure…)
